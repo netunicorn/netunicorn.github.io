@@ -43,7 +43,11 @@ Contains the source code of the netUnicorn platform, including base, client, and
 
 Text:
 ```
-Roman Beltiukov, Wenbo Guo, Arpit Gupta, and Walter Willinger. 2023. In Search of netUnicorn: A Data-Collection Platform to Develop Generalizable ML Models for Network Security Problems. In Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security (CCS ’23), November 26–30, 2023, Copenhagen, Denmark. ACM, New York, NY, USA, 15 pages. https://doi.org/10.1145/3576915.3623075
+Roman Beltiukov, Wenbo Guo, Arpit Gupta, and Walter Willinger. 2023. 
+In Search of netUnicorn: A Data-Collection Platform to Develop Generalizable ML Models for Network Security Problems. 
+In Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications 
+Security (CCS ’23), November 26–30, 2023, Copenhagen, Denmark. 
+ACM, New York, NY, USA, 15 pages. https://doi.org/10.1145/3576915.3623075
 ```
 
 Bibtex:
