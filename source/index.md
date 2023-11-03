@@ -37,6 +37,25 @@ Contains the source code of the netUnicorn platform, including base, client, and
 
 [https://github.com/netunicorn/netunicorn](https://github.com/netunicorn/netunicorn)
 
+## Cite us
+
+### netUnicorn paper
+
+Text:
+```
+Roman Beltiukov, Wenbo Guo, Arpit Gupta, and Walter Willinger. 2023. In Search of netUnicorn: A Data-Collection Platform to Develop Generalizable ML Models for Network Security Problems. In Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security (CCS ’23), November 26–30, 2023, Copenhagen, Denmark. ACM, New York, NY, USA, 15 pages. https://doi.org/10.1145/3576915.3623075
+```
+
+Bibtex:
+```
+To be added
+```
+
+### Extended report (ArXiv)
+
+[In Search of netUnicorn: A Data-Collection Platform to Develop Generalizable ML Models for Network Security Problems](https://arxiv.org/abs/2306.08853)
+
+
 ## Motivation
 The remarkable success of the use of machine learning-based solutions for networking problems has been impeded by the developed ML models’ inability to maintain efficacy when used in different network environments exhibiting different network behaviors. This issue is commonly referred to as the generalizability problem of ML models.
 
