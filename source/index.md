@@ -9,6 +9,13 @@ This platform is a pipeline-based platform (like Apache Airflow or CI/CD solutio
 - work under the conditions of an unstable network
 - reproducibility and easy sharing of tasks and pipelines
 
+## "I want to try it!"
+
+- You can ask netUnicorn team to provide your credentials to netUnicorn instance.
+  - Please, contact us via [Slack](https://netunicorn.github.io/#support) or [email](mailto:rbeltiukov@ucsb.edu)
+- You can deploy your instance on AWS EC2 using "netunicorn-v0.3" AMI (see [AWS Deployment](https://netunicorn.github.io/netunicorn/administrator_docs/deployment.html#aws-deployment) section in documentation)
+- You can deploy your instance anywhere with Docker support using our [Deployment guide](https://netunicorn.github.io/netunicorn/administrator_docs/deployment.html)
+
 ## Resources
 
 Here are some resources to get you started:
