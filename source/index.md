@@ -59,7 +59,22 @@ ACM, New York, NY, USA, 15 pages. https://doi.org/10.1145/3576915.3623075
 
 Bibtex:
 ```
-To be added
+@inproceedings{10.1145/3576915.3623075,
+author = {Beltiukov, Roman and Guo, Wenbo and Gupta, Arpit and Willinger, Walter},
+title = {In Search of NetUnicorn: A Data-Collection Platform to Develop Generalizable ML Models for Network Security Problems},
+year = {2023},
+isbn = {9798400700507},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3576915.3623075},
+doi = {10.1145/3576915.3623075},
+booktitle = {Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {2217–2231},
+numpages = {15},
+keywords = {artificial intelligence, data collection, network security, generalizability, machine learning},
+location = {<conf-loc>, <city>Copenhagen</city>, <country>Denmark</country>, </conf-loc>},
+series = {CCS '23}
+}
 ```
 
 ### Extended report (ArXiv)
