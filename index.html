@@ -1,0 +1,384 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="&lt;no title&gt;" href="contents.html" />
+
+    <!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
+        <title>netUnicorn - netunicorn</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="contents.html"><div class="brand">netunicorn</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="contents.html">
+  
+  
+  <span class="sidebar-brand-text">netunicorn</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">General Info</span></p>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Home</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://netunicorn.github.io/netunicorn">netUnicorn documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/netunicorn/netunicorn-library">netUnicorn library</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://join.slack.com/t/netunicorn/shared_invite/zt-240tsalar-l1Wc3DERTlXJ6wE~DXmm9A">Slack Workspace</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/netunicorn">netUnicorn on GitHub</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="netunicorn">
+<h1>netUnicorn<a class="headerlink" href="#netunicorn" title="Link to this heading">#</a></h1>
+<p>netUnicorn is a platform for building and running data pipelines on different nodes for data collection experiments. It simplifies expressing and realizing diverse data-collection intents over disparate network virtual (e.g., <a class="reference external" href="https://mininet.org/">Mininet</a>) and physical infrastructures (e.g., <a class="reference external" href="https://pinot.cs.ucsb.edu">PINOT</a>, <a class="reference external" href="https://saltproject.io/">SaltStack</a>, <a class="reference external" href="https://aws.amazon.com/fargate/">Amazon AWS</a>, <a class="reference external" href="https://azure.microsoft.com/en-us/products/container-instances">MS Azure Container Instances</a>, etc.).</p>
+<p>This platform is a pipeline-based platform (like Apache Airflow or CI/CD solutions), but instead optimizes the following:</p>
+<ul class="simple">
+<li><p>the ability to use different infrastructures via specific connectors (e.g., SaltStack-based, Azure Container Instances, Mininet, etc.)</p></li>
+<li><p>the short time between tasks</p></li>
+<li><p>work under the conditions of an unstable network</p></li>
+<li><p>reproducibility and easy sharing of tasks and pipelines</p></li>
+</ul>
+<section id="i-want-to-try-it">
+<h2>“I want to try it!”<a class="headerlink" href="#i-want-to-try-it" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>You can ask netUnicorn team to provide your credentials to netUnicorn instance.</p>
+<ul>
+<li><p>Please, contact us via <a class="reference external" href="https://netunicorn.github.io/#support">Slack</a> or <a class="reference external" href="mailto:rbeltiukov&#37;&#52;&#48;ucsb&#46;edu">email</a></p></li>
+</ul>
+</li>
+<li><p>You can deploy your instance on AWS EC2 using “netunicorn-v0.4” AMI (see <a class="reference external" href="https://netunicorn.github.io/netunicorn/administrator_docs/deployment.html#aws-deployment">AWS Deployment</a> section in documentation)</p></li>
+<li><p>You can deploy your instance anywhere with Docker support using our <a class="reference external" href="https://netunicorn.github.io/netunicorn/administrator_docs/deployment.html">Deployment guide</a></p></li>
+</ul>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Link to this heading">#</a></h2>
+<p>Here are some resources to get you started:</p>
+<section id="netunicorn-documentation">
+<h3>netUnicorn documentation<a class="headerlink" href="#netunicorn-documentation" title="Link to this heading">#</a></h3>
+<p>Contains all the API documentation, examples, user and administrator guides.</p>
+<p><a class="reference external" href="https://netunicorn.github.io/netunicorn/">https://netunicorn.github.io/netunicorn/</a></p>
+</section>
+<section id="netunicorn-library">
+<h3>netUnicorn library<a class="headerlink" href="#netunicorn-library" title="Link to this heading">#</a></h3>
+<p>Contains tasks and pipelines for different data collection experiments, including provided by community.</p>
+<p><a class="reference external" href="https://github.com/netunicorn/netunicorn-library">https://github.com/netunicorn/netunicorn-library</a></p>
+</section>
+<section id="support">
+<h3>Support<a class="headerlink" href="#support" title="Link to this heading">#</a></h3>
+<p>You can join <a class="reference external" href="https://join.slack.com/t/netunicorn/shared_invite/zt-240tsalar-l1Wc3DERTlXJ6wE~DXmm9A">netUnicorn Slack workspace</a> for support and discussions.</p>
+</section>
+<section id="netunicorn-github-organization">
+<h3>netUnicorn GitHub organization<a class="headerlink" href="#netunicorn-github-organization" title="Link to this heading">#</a></h3>
+<p>Contains all the repositories for netUnicorn project.</p>
+<p><a class="reference external" href="https://github.com/netunicorn">https://github.com/netunicorn</a></p>
+</section>
+<section id="netunicorn-source-code">
+<h3>netUnicorn source code<a class="headerlink" href="#netunicorn-source-code" title="Link to this heading">#</a></h3>
+<p>Contains the source code of the netUnicorn platform, including base, client, and director components.</p>
+<p><a class="reference external" href="https://github.com/netunicorn/netunicorn">https://github.com/netunicorn/netunicorn</a></p>
+</section>
+</section>
+<section id="cite-us">
+<h2>Cite us<a class="headerlink" href="#cite-us" title="Link to this heading">#</a></h2>
+<section id="netunicorn-paper">
+<h3>netUnicorn paper<a class="headerlink" href="#netunicorn-paper" title="Link to this heading">#</a></h3>
+<p>Text:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Roman Beltiukov, Wenbo Guo, Arpit Gupta, and Walter Willinger. 2023. 
+In Search of netUnicorn: A Data-Collection Platform to Develop Generalizable ML Models for Network Security Problems. 
+In Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications 
+Security (CCS ’23), November 26–30, 2023, Copenhagen, Denmark. 
+ACM, New York, NY, USA, 15 pages. https://doi.org/10.1145/3576915.3623075
+</pre></div>
+</div>
+<p>Bibtex:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>@inproceedings{10.1145/3576915.3623075,
+author = {Beltiukov, Roman and Guo, Wenbo and Gupta, Arpit and Willinger, Walter},
+title = {In Search of NetUnicorn: A Data-Collection Platform to Develop Generalizable ML Models for Network Security Problems},
+year = {2023},
+isbn = {9798400700507},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3576915.3623075},
+doi = {10.1145/3576915.3623075},
+booktitle = {Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {2217–2231},
+numpages = {15},
+keywords = {artificial intelligence, data collection, network security, generalizability, machine learning},
+location = {&lt;conf-loc&gt;, &lt;city&gt;Copenhagen&lt;/city&gt;, &lt;country&gt;Denmark&lt;/country&gt;, &lt;/conf-loc&gt;},
+series = {CCS &#39;23}
+}
+</pre></div>
+</div>
+</section>
+<section id="extended-report-arxiv">
+<h3>Extended report (ArXiv)<a class="headerlink" href="#extended-report-arxiv" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://arxiv.org/abs/2306.08853">In Search of netUnicorn: A Data-Collection Platform to Develop Generalizable ML Models for Network Security Problems</a></p>
+</section>
+</section>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<p>The remarkable success of the use of machine learning-based solutions for networking problems has been impeded by the developed ML models’ inability to maintain efficacy when used in different network environments exhibiting different network behaviors. This issue is commonly referred to as the generalizability problem of ML models.</p>
+<p>To address the generalizability issue, we need to simplify iterative collection of labelled, high-quality and realistic network data for a wide range of learning problems from diverse network environments. netUnicorn aims to address this problem ensuring that a researcher (or practitioner) can iteratively collect the desired network data, gradually eliminating the data-related problems to address the model generalizability issues.</p>
+</section>
+<section id="existing-approaches">
+<h2>Existing Approaches<a class="headerlink" href="#existing-approaches" title="Link to this heading">#</a></h2>
+<p>Very few previous efforts have focused on simplifying <strong>endogenous</strong> collection of networking data. Given this lack of focus, we only have solution that are typically <em>fragmented</em> in the sense that each effort is custom-designed for a specific learning problem or specific network environment. These <em>fragmented</em> solutions are not suited to solve the model generalizability issues.</p>
+<p><img alt="netUnicorn design" src="_images/netunicorn-design.png" /></p>
+</section>
+<section id="key-idea">
+<h2>Key Idea<a class="headerlink" href="#key-idea" title="Link to this heading">#</a></h2>
+<p>To simplify data collection for learning problems in network, we take inspiration from the classic <em>hourglass</em> model, where the different learning problems comprise the top layer, the different network environments constitute the bottom layer, and netUnicorn serves as the <em>thin waist</em> that connects the two layers. We realize this abstraction by developing a new programming abstraction that essentially disaggregates data-collection intents or policies (i.e., answering what data to collect and from where) from mechanisms (i.e., answering how to collect the desired data on a given platform)—simplifying collecting data from disparate network infrastructures.</p>
+<p>Further, netUnicorn’s programming abstraction disaggregates the high-level intents into self-contained and reusable tasks—simplifying collecting data for different learning problems.</p>
+<p>netUnicorn takes responsibility for compiling these high-level intents into target-specific instructions, deploying them to appropriate data-collection nodes, and executing them while handling various runtime events such as link or node failures. By doing so, netUnicorn streamlines the data collection process and ensures efficient execution in dynamic network environments.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          <a class="prev-page" href="contents.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, Roman Beltiukov
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">netUnicorn</a><ul>
+<li><a class="reference internal" href="#i-want-to-try-it">“I want to try it!”</a></li>
+<li><a class="reference internal" href="#resources">Resources</a><ul>
+<li><a class="reference internal" href="#netunicorn-documentation">netUnicorn documentation</a></li>
+<li><a class="reference internal" href="#netunicorn-library">netUnicorn library</a></li>
+<li><a class="reference internal" href="#support">Support</a></li>
+<li><a class="reference internal" href="#netunicorn-github-organization">netUnicorn GitHub organization</a></li>
+<li><a class="reference internal" href="#netunicorn-source-code">netUnicorn source code</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cite-us">Cite us</a><ul>
+<li><a class="reference internal" href="#netunicorn-paper">netUnicorn paper</a></li>
+<li><a class="reference internal" href="#extended-report-arxiv">Extended report (ArXiv)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#motivation">Motivation</a></li>
+<li><a class="reference internal" href="#existing-approaches">Existing Approaches</a></li>
+<li><a class="reference internal" href="#key-idea">Key Idea</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
+    </body>
+</html>
